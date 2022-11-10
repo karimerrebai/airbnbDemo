@@ -4,7 +4,7 @@ const { connect } = require("mongoose");
 const { error, success } = require("consola");
 require("dotenv").config();
 
-const DB = "mongodb://localhost:5000/airbnb";
+const DB = process.env.APP_DB;
 const connectToDB = async () => {
   try {
     await connect(DB);

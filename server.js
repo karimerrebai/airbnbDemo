@@ -1,26 +1,20 @@
-const express = require('express')
+const express = require("express");
 const { success, error } = require("consola");
-const cors = require('cors')
+const cors = require("cors");
 
-const app = express()
+const app = express();
 
-// using json format 
+// using json format
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+require("dotenv").config();
+const DB = require("./Config/db");
 
+const PORT = process.env.APP_PORT || 4000;
 
-require('dotenv').config();
-const DB = require('./conf/confing')
-
-
-const PORT = process.env.PORT || 4000;
-
-const DOMAIN = process.env.DOMAIN;
-
-
-
+const DOMAIN = process.env.APP_DOMAIN;
 
 app.listen(PORT, async () => {
   try {
