@@ -12,7 +12,7 @@ const commentSchema = new mongoose.Schema({
         ref:'Commentaire',
         required:true
     },
-    loge:{
+    lodge:{
         type:mongoose.Types.ObjectId,
         ref:'Lodge',
         required:true

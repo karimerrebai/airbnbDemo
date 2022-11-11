@@ -12,7 +12,7 @@ var ownerSchema = new mongoose.Schema({
         unique:true,
     },
     //relation
-    loges:[{
+    lodges:[{
         type:mongoose.Types.ObjectId,
         ref:'Lodge',
         required:false

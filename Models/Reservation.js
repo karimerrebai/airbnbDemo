@@ -29,7 +29,7 @@ var reservationSchema = new mongoose.Schema({
      ref:'Facture',
      required:false
     },
-    loge:{
+    lodge:{
         type:mongoose.Types.ObjectId,
         ref:'Lodge',
         required:true
