@@ -14,7 +14,7 @@ var ownerSchema = new mongoose.Schema({
     //relation
     loges:[{
         type:mongoose.Types.ObjectId,
-        ref:'Loge',
+        ref:'Lodge',
         required:false
     }]
 },{timestamps:true});
